@@ -42,7 +42,7 @@ main {
   float:left;
   width: calc(100% - 230px);
   height: 100%;
-  background-color: #272836;
+  background-color: #151924;
   overflow-y: auto;
 }
 
@@ -56,7 +56,7 @@ a {
 
 h3 {
   color: #fff;
-  font-size: 35px
+  font-size: 25px
 }
 
 p {
@@ -77,7 +77,7 @@ p {
 /* BLOCCO LOGO */
 
 .col-1 nav .logo {
-  height: 90px;
+  height: 60px;
   display: flex;
   align-items: center;
   padding: 0 5%;
@@ -211,7 +211,7 @@ p {
 }
 
 .col-2 section > p {
-  margin-top: 10px;
+  margin-top: 5px;
 }
 
 /*  BLOCCO UPGRATE  */
@@ -222,7 +222,7 @@ p {
   left:230px;
   z-index: 99;
   background-color: rgba(0, 0, 0, 0.6);
-  height: 90px;
+  height: 60px;
   width: calc(100% - 230px);
   display: flex;
   justify-content: flex-end;
@@ -233,10 +233,10 @@ p {
   border: solid 1px #fff;
   color: #fff;
   background-color: rgba(0, 0, 0, 0.6);
-  height: 40px;
+  height: 35px;
   width: 200px;
   font-size: 12px;
-  border-radius: 20px;
+  border-radius: 17.5px;
   margin-right: 22px;
 }
 
@@ -248,7 +248,7 @@ p {
 /* BLOCCO NAVBAR-MAIN */
 
 #navbar-main {
-  padding-top: 110px;
+  padding-top: 70px;
 }
 
 #navbar-main ul {
@@ -288,11 +288,11 @@ p {
 /* BLOCCO RICERCHE RECENTI */
 
 #ricerche-recenti {
-  padding-top: 30px;
+  padding-top: 15px;
 }
 
 .layout-img {
-  padding-top: 30px;
+  padding-top: 15px;
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
@@ -331,13 +331,14 @@ p {
 }
 
 .layout-img > div > p {
+  font-size: 12px;
   margin-bottom: 15px;
   text-align: center;
 }
 
 .layout-img > div > a {
   color: #fff;
-  font-size: 20px;
+  font-size: 15px;
   margin-bottom: 5px;
   text-align: center;
 }
@@ -359,12 +360,12 @@ p {
 /* BLOCCO CREATO PER TE */
 
 #creato-per-te {
-  padding-top: 30px;
+  padding-top: 10px;
 }
 
 #creato-per-te .layout-img > div > a {
   color: #fff;
-  font-size: 20px;
+  font-size: 15px;
   margin-bottom: 15px;
   text-align: center;
 }
@@ -372,7 +373,7 @@ p {
 /* BLOCCO ARTISTI POPOLARI */
 
 #artisti-popolari {
-  padding-top: 30px;
+  padding-top: 10px;
 }
 
 #artisti-popolari .layout-img > div .album img {
@@ -384,12 +385,190 @@ p {
 footer {
   width: 100%;
   height: 90px;
-  background-color: #616467;
+  padding: 0 2% 0 0.5%;
+  background-color: #222224;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+
+footer h5 {
+  font-size: 15px;
+  color: #fff;
+}
+
+footer a {
+  font-size: 13px;
+  color: #616467;
+}
+
+/* BLOCCO BRANO IN ASCOLTO */
+
+footer .brano-in-ascolto {
+  display: flex;
+  justify-content: flex-start;
+  width: calc(100% / 3);
+}
+
+footer .brano-in-ascolto-1 {
+  width: 65%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+footer .brano-in-ascolto-1 .album-1 img{
+  width: 50px;
+  height: 50px;
+}
+
+footer .brano-in-ascolto-1 .titolo-brano {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 3%;
+}
+
+footer .brano-in-ascolto-1 .titolo-brano a:hover {
+  text-decoration: underline;
+  color: #fff;
+}
+
+footer .brano-in-ascolto-1 .preferiti {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 10%;
+}
+
+footer .brano-in-ascolto-1 .preferiti a {
+  margin-left: 30%;
+}
+
+footer .brano-in-ascolto-1 .preferiti i {
+  font-size: 15px;
+  color: #616467;
+  margin-left: 2%;
+}
+
+footer .brano-in-ascolto-1 .preferiti i:hover {
+  color: #fff;
+}
+
+/* BLOCCO PLAY */
+
+footer .play {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: calc(100% / 3);
+}
+
+footer .play .comandi-play {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  width: 50%;
+}
+
+footer i {
+  font-size: 13px;
+  color: #fff;
+}
+
+footer .play .comandi-play a:nth-last-child(3) i{
+  font-size: 23px;
+}
+
+footer .play .comandi-play a:nth-last-child(3):hover i{
+  transform: scale(1.2);
+}
+
+footer .play .comandi-play a:last-child  i {
+  margin-right: 0;
+}
+
+footer .play .tempo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+footer .play .tempo p {
+  color: #fff;
+  font-size: 10px;
+}
+
+footer .play .tempo > div {
+  width: 80%;
+}
+
+.barra {
+  border-bottom: solid 2.5px #616467;
+  position: relative;
+}
+
+.avanzamento {
+  position: absolute;
+  bottom: -2.5px;
+  left: 0;
+  width: 15%;
+  border-bottom: solid 2.5px #fff;
+}
+
+.avanzamento:hover {
+  border-color: #b8e600;
+  cursor: pointer;
+}
+
+.pallino-avanzamento {
+  position: absolute;
+  bottom: -7px;
+  left: 100%;
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  background-color: #fff;
+  display: none;
+}
+
+.avanzamento:hover .pallino-avanzamento {
+  display: block;
+}
+
+.pallino-avanzamento:hover {
+  cursor: pointer;
+}
+
+/* BLOCCO VOLUME */
+
+footer .volume {
+  width: calc(100% / 3);
+  display: flex;
+  justify-content: flex-end;
+}
+
+footer .volume-1 {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .volume-1 > div {
+  width: 70%;
+}
+
+footer .volume-1 a {
+  margin-right: 7%;
+}
+
 
 /* VERSIONE MD */
 
-@media all and (max-width: 1127px) {
+@media all and (max-width: 1200px) {
 
   /* SECONDA COLONNA MAIN */
 
@@ -408,11 +587,19 @@ footer {
     width: calc(92% / 4);
   }
 
+  /* IMPOSTAZIONI FOOTER */
+
+  /* BLOCCO PLAY */
+
+  footer .play .comandi-play {
+    width: 60%;
+  }
+
 }
 
 /* VERSIONE S */
 
-@media all and (max-width: 830px) {
+@media all and (max-width: 800px) {
 
   /* SECONDA COLONNA MAIN */
 
@@ -426,6 +613,35 @@ footer {
 
   .layout-img > div {
     width: calc(96% / 2);
+  }
+
+  /* IMPOSTAZIONI FOOTER */
+
+  /* BLOCCO BRANO IN ASCOLTO */
+
+  footer .brano-in-ascolto .preferiti {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  footer .brano-in-ascolto-1 {
+    width: 90%;
+  }
+
+  /* BLOCCO PLAY */
+
+  footer .play .comandi-play {
+    width: 75%;
+  }
+
+  footer .play .tempo > div {
+    width: 75%;
+  }
+
+  /* BLOCCO VOLUME */
+  footer .volume-1 {
+    width: 85%;
   }
 
 }
@@ -513,6 +729,48 @@ footer {
 
   #navbar-main ul {
     max-width: 379px;
+  }
+
+  /* IMPOSTAZIONI FOOTER */
+
+  /* BLOCCO BRANO IN ASCOLTO */
+
+  footer .brano-in-ascolto-1 .album-1 {
+    width: 26%;
+    display: flex;
+    align-items: center;
+  }
+
+  footer .brano-in-ascolto-1 .album-1 img {
+    width: 100%;
+    height: auto;
+  }
+
+  footer .brano-in-ascolto-1 {
+    width: 100%;
+  }
+
+  footer .brano-in-ascolto-1 .preferiti {
+    margin-left: 3%;
+  }
+
+  footer .brano-in-ascolto-1 .preferiti a {
+    margin-left: 15%;
+  }
+
+  /* BLOCCO PLAY */
+
+  footer .play .comandi-play {
+    width: 90%;
+  }
+
+  footer .play .tempo > div {
+    width: 70%;
+  }
+
+  /* BLOCCO VOLUME */
+  footer .volume-1 {
+    width: 90%;
   }
 
 }

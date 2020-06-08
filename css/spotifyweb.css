@@ -69,7 +69,7 @@ p {
 /* IMPOSTAZIONI GENERALI */
 
 .centratura-1 {
-  padding: 3% 5%;
+  padding: 3% 8%;
 }
 
 /* BLOCCO NAVBAR DI SINISTRA */
@@ -97,23 +97,18 @@ p {
   border-left: solid 3px #b8e600;
 }
 
-.col-1 nav ul li a {
-  display: flex;
-  align-items: center;
-}
-
 .col-1 nav ul li:first-child a p, .col-1 nav ul li:first-child a img {
   color: #fff;
   filter: opacity(100%);
 }
 
 .col-1 nav ul li a img {
-  height: 24px;
-  margin-right: 5px;
+  height: 25px;
+  margin-right: 10px;
   filter: opacity(35%);
 }
 
-.col-1 nav ul li a:hover p, .col-1 nav ul li a:hover img {
+.col-1 a:hover p, .col-1 nav ul li a:hover img {
   color: #fff;
   filter: opacity(100%);
 }
@@ -128,7 +123,7 @@ p {
   padding-top: 6%;
 }
 
-.col-1 .playlist li a {
+.col-1 a {
   color: #616467;
   font-size: 15px;
   display: flex;
@@ -147,7 +142,7 @@ p {
   margin-right: 10px;
 }
 
-.col-1 .playlist li a:hover {
+.col-1 a:hover {
   color: #fff;
 }
 
@@ -155,14 +150,51 @@ p {
   background-color: #fff;
 }
 
-
 /* BLOCCO PROFILO */
 
 .col-1 .profilo {
   position: absolute;
   bottom: 0;
   left: 0;
+  width: 100%;
+  background-color: #000;
+}
 
+.col-1 .profilo a img {
+  height: 18px;
+  margin-right: 10px;
+  filter: opacity(35%);
+}
+
+.col-1 .profilo a:hover img {
+  filter: opacity(100%);
+}
+
+.col-1 .profilo a p {
+  font-size: 12px;
+}
+
+.col-1 .profilo .bordo-grigio {
+  width: 100%;
+  border-bottom: solid 1px #616467;
+  margin: 10px 0;
+}
+
+.col-1 .profilo span {
+  display: flex;
+  align-items: center;
+}
+
+.col-1 .profilo span img {
+  height: 25px;
+  margin-right: 12px;
+  background-color: #616467;
+  filter: opacity(100%);
+  border-radius: 50%;
+}
+
+.col-1 .profilo span p {
+  color: #fff;
 }
 
 /* SECONDA COLONNA MAIN */
@@ -173,62 +205,8 @@ p {
   padding: 0 2%;
 }
 
-.col-2 p {
-  color: #616467;
-  font-size: 15px;
+.col-2 section > p {
   margin-top: 10px;
-}
-
-.layout-img {
-  padding-top: 30px;
-  display: flex;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-}
-
-.layout-img > div {
-  width: calc(100% / 6);
-  display: flex;
-  flex-direction: column;
-
-}
-
-.layout-img > div .album {
-  width: 100%;
-  max-height: 90%;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  position: relative;
-}
-
-.layout-img > div .album img {
-  max-height: 100%;
-  width: 90%;
-}
-
-.layout-img i {
-  display: none;
-  position: absolute;
-  top:50%;
-  left:45%;
-  transform: translate(-50%, -50%);
-  color: #fff;
-  font-size: 50px;
-}
-
-.layout-img > div a:hover {
-  text-decoration: underline;
-}
-
-.layout-img > div .album:hover i{
-  display: block;
-  cursor: pointer;
-
-}
-
-.layout-img > div .album:hover img {
-  filter: grayscale(100%);
 }
 
 /*  BLOCCO UPGRATE  */
@@ -308,17 +286,69 @@ p {
   padding-top: 30px;
 }
 
-#ricerche-recenti .layout-img > div > a {
-  color: #616467;
-  font-size: 15px;
-  text-align: center;
-  margin-bottom: 15px;
+.layout-img {
+  padding-top: 30px;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
 }
 
-#ricerche-recenti .layout-img > div > a:nth-last-child(2) {
+.layout-img > div {
+  width: calc(90% / 6);
+  margin-right: 2%;
+  display: flex;
+  flex-direction: column;
+}
+
+.layout-img > div:last-child {
+  margin-right: 0;
+}
+
+.layout-img > div .album {
+  width: 100%;
+  max-height: 90%;
+  position: relative;
+}
+
+.layout-img > div .album img {
+  max-height: 100%;
+  width: 100%;
+}
+
+.layout-img i {
+  display: none;
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 50px;
+}
+
+.layout-img > div > p {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.layout-img > div > a {
   color: #fff;
   font-size: 20px;
   margin-bottom: 5px;
+  text-align: center;
+}
+
+.layout-img > div a:hover {
+  text-decoration: underline;
+}
+
+.layout-img > div .album:hover i{
+  display: block;
+  cursor: pointer;
+
+}
+
+.layout-img > div .album:hover img {
+  filter: grayscale(100%) opacity(50%);
 }
 
 /* BLOCCO CREATO PER TE */
@@ -330,8 +360,8 @@ p {
 #creato-per-te .layout-img > div > a {
   color: #fff;
   font-size: 20px;
-  text-align: center;
   margin-bottom: 15px;
+  text-align: center;
 }
 
 /* BLOCCO ARTISTI POPOLARI */
@@ -344,13 +374,6 @@ p {
   border-radius: 50%;
 }
 
-#artisti-popolari .layout-img > div > a {
-  color: #fff;
-  font-size: 20px;
-  text-align: center;
-  margin-bottom: 15px;
-}
-
 /* IMPOSTAZIONI FOOTER */
 
 footer {
@@ -361,7 +384,7 @@ footer {
 
 /* VERSIONE MD */
 
-@media all and (min-width: 830px) and (max-width: 1127px) {
+@media all and (max-width: 1127px) {
 
   /* SECONDA COLONNA MAIN */
 
@@ -371,36 +394,33 @@ footer {
     align-content: space-between;
     width: 100%;
     max-width: 500px;
-    height: 60px;
+    min-height: 60px;
   }
 
   /* BLOCCO RICERCHE RECENTI *//* BLOCCO CREATO PER TE */
 
   .layout-img > div {
-    width: calc(100% / 4);
+    width: calc(92% / 4);
   }
 
 }
 
 /* VERSIONE S */
 
-@media all and (min-width: 600px) and  (max-width: 830px) {
+@media all and (max-width: 830px) {
 
   /* SECONDA COLONNA MAIN */
 
   /* BLOCCO NAVBAR-MAIN */
 
   #navbar-main ul {
-    align-content: space-between;
-    height: 60px;
-    width: 100%;
     max-width: 350px;
   }
 
   /* BLOCCO RICERCHE RECENTI *//* BLOCCO CREATO PER TE */
 
   .layout-img > div {
-    width: calc(100% / 2);
+    width: calc(96% / 2);
   }
 
 }
@@ -439,20 +459,30 @@ footer {
   }
 
   .col-1 nav .logo a img {
-    height: 30px;
+    height: 25px;
   }
 
   .col-1 nav ul li:first-child {
     border-left: 0;
   }
 
-  .col-1 nav ul li a {
+  .col-1 a, .col-1 span {
     justify-content: center;
   }
 
   .col-1 nav ul li a img {
-    height: 30px;
     margin-right: 0;
+  }
+
+  /* BLOCCO PROFILO */
+
+  .col-1 .profilo a img {
+    margin-right: 0px;
+    margin-bottom: 10px;
+  }
+
+  .col-1 .profilo span img {
+    margin-right: 0px;
   }
 
   /* SECONDA COLONNA MAIN */
@@ -467,16 +497,7 @@ footer {
   /* BLOCCO NAVBAR-MAIN */
 
   #navbar-main ul {
-    align-content: space-between;
-    width: 100%;
     max-width: 379px;
-    min-height: 60px;
-  }
-
-  /* BLOCCO RICERCHE RECENTI *//* BLOCCO CREATO PER TE */
-
-  .layout-img > div {
-    width: calc(100% / 2);
   }
 
 }

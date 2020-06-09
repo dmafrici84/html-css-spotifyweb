@@ -35,7 +35,6 @@ main {
   height: calc(100% - 80px);
   background-color: #000;
   overflow-y: auto;
-  color: #fff;
 }
 
 .col-2 {
@@ -64,7 +63,7 @@ p {
   font-size: 15px;
 }
 
-/* PRIMA COLONNA MAIN */
+/* COLONNA DI SINISTRA - MAIN */
 
 /* IMPOSTAZIONI GENERALI */
 
@@ -80,7 +79,6 @@ p {
   height: 60px;
   display: flex;
   align-items: center;
-  padding: 0 5%;
 }
 
 .col-1 nav .logo a img {
@@ -115,8 +113,9 @@ p {
 
 /* BLOCCO PLAYLIST */
 
-.col-1 .playlist {
-  padding-top: 25px;
+.col-1 .playlist h5 {
+  color: #fff;
+  padding-top: 5%;
 }
 
 .col-1 .playlist li {

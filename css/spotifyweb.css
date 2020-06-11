@@ -412,15 +412,13 @@ footer i {
 /* BLOCCO BRANO IN ASCOLTO */
 
 footer .brano-in-ascolto {
-  width: 25%;
-  padding-right: 8%;
+  width: 27.5%;
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 
 footer .brano-in-ascolto .album-1 {
-  width: 25%;
+  margin-right: 3px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -432,7 +430,7 @@ footer .brano-in-ascolto .album-1 img {
 }
 
 footer .brano-in-ascolto .titolo-brano {
-  width: 50%;
+  margin-right: 40px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -444,9 +442,12 @@ footer .brano-in-ascolto .titolo-brano a:hover {
 }
 
 footer .brano-in-ascolto .preferiti {
-  width: 18%;
   display: flex;
   justify-content: space-between;
+}
+
+footer .brano-in-ascolto .preferiti a:first-child {
+  margin-right: 15px;
 }
 
 footer .brano-in-ascolto .preferiti a i {
@@ -538,15 +539,18 @@ footer .play .tempo .barra {
 /* BLOCCO VOLUME */
 
 footer .volume {
-  width: 25%;
-  padding-left: 8%;
+  width: 27.5%;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
 }
 
+footer .volume a {
+  margin-right: 20px;
+}
+
 footer .volume .barra {
-  width: 60%;
+  width: 35%;
 }
 
 /* VERSIONE MD */
@@ -574,29 +578,14 @@ footer .volume .barra {
 
   /* BLOCCO BRANO IN ASCOLTO */
 
-  footer .brano-in-ascolto {
-    padding-right: 0;
+  footer .brano-in-ascolto .titolo-brano {
+    margin-right: 25px;
   }
-
-  footer .brano-in-ascolto .album-1 {
-    width: 27%;
-  }
-
-  footer .brano-in-ascolto .album-1 img {
-    min-height: 51px;
-  }
-
   /* BLOCCO PLAY */
 
   footer .play .comandi-play {
     width: 60%;
     margin-left: 20%;
-  }
-
-  /* BLOCCO VOLUME */
-
-  footer .volume {
-    padding-left: 2%;
   }
 
 }
@@ -623,30 +612,17 @@ footer .volume .barra {
 
   /* BLOCCO BRANO IN ASCOLTO */
 
-  footer .brano-in-ascolto {
-    width: 30%;
-  }
-
   footer .brano-in-ascolto .album-1 {
-    width: 35%;
-  }
-
-  footer .brano-in-ascolto .titolo-brano {
-    width: 47%
+    width: 25%;
   }
 
   footer .brano-in-ascolto .preferiti {
-    width: 15%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
   }
 
   /* BLOCCO PLAY */
-
-  footer .play {
-    width: 40%;
-  }
 
   footer .play .comandi-play {
     width: 70%;
@@ -659,9 +635,8 @@ footer .volume .barra {
 
   /* BLOCCO VOLUME */
 
-  footer .volume {
-    width: 30%;
-    padding-right: 1%;
+  footer .volume a {
+    margin-right: 15px;
   }
 
 }
@@ -760,25 +735,21 @@ footer .volume .barra {
   /* BLOCCO BRANO IN ASCOLTO */
 
   footer .brano-in-ascolto {
-    width: 35%;
-    padding-right: 0;
+    width: 33%;
   }
 
-  footer .brano-in-ascolto .album-1 img {
-    min-width: 0;
-    max-width: 100%;
-    min-height: 40px;
+  footer .brano-in-ascolto .titolo-brano {
+    margin-right: 10px;
   }
-
   /* BLOCCO PLAY */
 
   footer .play {
-    width: 40%;
+    width: 34%;
   }
 
   footer .play .comandi-play {
-    width: 80%;
-    margin-left: 10%;
+    width: 90%;
+    margin-left: 5%;
   }
 
   footer .play .tempo .barra {
@@ -788,12 +759,11 @@ footer .volume .barra {
   /* BLOCCO VOLUME */
 
   footer .volume {
-    width: 25%;
-    padding-left: 1%;
+    width: 33%;
   }
 
-  footer .volume .barra {
-    width: 40%;
+  footer .volume a {
+    margin-right: 8px;
   }
 
 }

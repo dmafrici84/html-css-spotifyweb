@@ -123,7 +123,18 @@
 
           <div class="profilo-1">
             <img src="img/profile.svg" alt="">
-            <p class="nav-nomi"><strong>John Doe</strong></p>
+            <p id="js-nome-profilo" class="nav-nomi"><strong></strong></p>
+
+            <!-- utilizzo di js senza file di riferimento -->
+
+            <!-- <script type="text/javascript">
+              document.getElementById('js-nome-profilo').innerHTML = "John Doe";
+            </script> -->
+
+            <!-- utilizzo di js con file di riferimento -->
+
+             <script type="text/javascript" src="js/script.js"></script>
+
           </div>
 
         </div>
